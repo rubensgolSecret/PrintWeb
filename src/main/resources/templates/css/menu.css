@@ -1,0 +1,32 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flexbox;
+    -ms-flex-align: start;
+    align-items: initial;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #722d4a;
+}
+
+select {
+    background-color: #c1d8d5;
+}
+
+.menuADM {
+    width: 100%;
+    max-width: 330px;
+    padding: 5px;
+    margin: initial;
+    background-color: #a5cec8;
+}
+
+.btn {
+    margin-top: 15px;
+    border: none;
+    border-radius: 1.5rem;
+}

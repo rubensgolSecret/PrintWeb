@@ -1,0 +1,37 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Rubens">
+
+  <title>Print</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet">
+  
+  <script src="scripts/controlaTela.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+
+<body class="text-center">
+  <form class="form-signin" action="/print_home" method="get">
+    
+    <h1 class="h3 mb-3 font-weight-normal">Print</h1>
+
+    <div class="alert alert-warning collapse" id="erroTokenBranco">
+      <strong>TOKEN EM BRANCO!</strong>
+    </div>
+    <div class="alert alert-danger collapse" id="erroTokenInvalido">
+      <strong>TOKEN INVALIDO!</strong>
+    </div>
+
+    <label for="token" class="sr-only">Token</label>
+    <input type="text" id="token" name="token" class="form-control" placeholder="Token" required autofocus>
+
+    <a id="iniciar" onclick="clickIniciar()" class="btn btn-lg btn-primary btn-block">Iniciar</a>
+    <a id="parar" onclick="clickParar()"  class="btn btn-lg btn-primary btn-block disabled">Parar</a>
+  </form>
+
+</body>
+</html>
